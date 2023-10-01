@@ -1,0 +1,9 @@
+.container{
+    background-color: #bbb;
+}
+.imageContainer{
+    width: max-content;
+    position: relative;
+    height: 300px;
+    object-fit: contain;
+}
