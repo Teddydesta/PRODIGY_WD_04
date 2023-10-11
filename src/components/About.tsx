@@ -1,32 +1,22 @@
 
 export default function About() {
   return (
-    <section id='About text-gray-900 shadow-md'>
-        <div className='container mx-auto flex px-10 py-20 mid:flex-col flex-row items-center font-sans'>
-            <div className='lg:flex-grow md:m-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md-16 md:mb-0 justify-center-center text-center'>
-                <h1 className='title-font sm:text-4xl text-3xl mb-4 font-medium text-bold'>
-                    <p>About Me</p>
-                   </h1>
-                   <center className="pb-4 pt-4"> <hr className="bg-green-900 md:w-14 h-1 w-8 justify-center"/></center>
-                   <h1>
-                    <h1 className="font-bold text-3xl">Tewodros Desta</h1>
-                  
-                </h1>
-                <p className="mb-8 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                Laborum, voluptas natus?
-                </p>
-                <div className="flex justify-center">
-                  <a href="#contact" className="inline-flex text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded text-lg">
-                    Work With Me
-
-                  </a>
-
-                </div>
-            </div>
-            <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img src="src/assets/teddy.jpg" alt="Hero" className="object-cover object-center rounded-full w-30  h-30 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0  "/>
+    <section id='About' className="bg-gray-900 text-white sm:flex-col shadow-md justify-between ">
+        <div className='container mx-auto flex px-10 py-20  flex-row items-center  '>
+           <center>
+           <h1 className="sm:text-4xl text-3xlfont-medium title-font  mb-4">About Me</h1>
+                   
+                   <hr className="bg-green-900 md:w-14 h-1 w-8  rounded-full"/>
+                     <h1>
+                      <h1 className="font-bold text-3xl mb-4">Tewodros Desta</h1>
+                    
+                  </h1>
+                  <p className="mb-8 leading-relaxed text-justify	 ">
+                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+           </center>
+            <div className="container w-full   ">
+              <img src="src/assets/man.png" alt="Hero" className="object-cover object-center    transition-all  cursor-pointer  overflow-hidden  sm:hidden  hiden lg:block "/>
 
             </div>
         </div>

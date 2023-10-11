@@ -1,38 +1,98 @@
-import React from 'react'
+import '../app.css'
+import { useFormik } from 'formik';
+import { schema } from './contactForm/Schema';
 
+const onSubmit=async (values:any,actions:any)=>{
+  await new Promise((resolve)=>setTimeout(resolve,1000,));
+ actions.resetForm();
+  console.log(values,actions);
+}
 const Contact=()=> {
+const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} = useFormik({
+  initialValues: {
+    fullName: "",
+    
+    email: "",
+    message:"",
+  },
+  onSubmit,
+  validationSchema: schema,
+
+})
+
+ 
   return (
-    <section id='contact ' className='shadow-md bg-gray-100 h-full w-full dark:text-gray-400 py-10 '>
+    <section id='Contact' className='shadow-md bg-gray-800  h-full w-full  py-10 '>
       <div className='container mx-auto flex flex-wrap flex-col pl-10'>
-       <center>
+       <center className='text-white'>
        <h1 className='font-medium font-title font-bold text-4xl'>
-          Hire Me
+          Contact Me!
         </h1>
-        <p className='leading-relaxed items-center justify-center w-1/2' >
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-                laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
-                Laborum, voluptas natus?
+        <hr className='w-20 border rounded-full h-1 bg-green-900 mb-4 mt-4'/>
+        <p className='leading-relaxed text-center justify-center w-1/3 text-justify	' >
+        I'd Love If you reached out to me. Even if It's just to
+        say "Hey". Don't hesitate!. Drop me a line I will get 
+        back to you as soon as possible.  
+
         </p>
        </center>
-        <div className='flex flex-row justify-between shadow-md ml-20 mr-20 mt-10 mb-10'>
+        <div className='w-full gap-20 sm:flex-row lg:w-2/3 sm:mx-auto sm:mb-2 -mx-4 flex flex-row justify-between shadow-md   mt-10 mb-10 '>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img src="src/assets/hero.png" alt="Hero" className="object-cover object-center rounded-full w-30  h-30 transition-all duration-300 cursor-pointer    "/>
+              <img src="src/assets/hero.png" alt="Hero" className="object-cover  rounded-full  h-120 transition-all duration-300 cursor-pointer    "/>
 
             </div>
-          <form action="" 
-          className='flex flex-wrap flex-col pt-4 pb-4  mx-auto w-full ml-40 mr-10'
+         
+            <form  
+          
+          action="" 
+          autoComplete='off'
+          onSubmit={handleSubmit}
+          
           >
-           
-            <label htmlFor="" className='font-bold'>FULL NAME</label>
-            <input type="name" className='border rounded border-gray-500 h-10'/>
-            <label htmlFor="" className='font-bold'>EMAIL</label>
-            <input type="Email" className='border rounded border-gray-500 h-10'/>
-            <label htmlFor="" className='font-bold'>MESSAGE</label>
-            <textarea name="" id="" className='border rounded border-gray-500 h-24'></textarea>
-            <button className='border rounded-lg h-10 mt-4 bg-green-500 text-gray-900 font-bold font-title'>Send Message</button>
+            <label htmlFor="fullName">FULL NAME</label>
+            <input type="text"
+            value={values.fullName}
+            onChange={handleChange}
+            onBlur={handleBlur}   
+           id='fullName'
+         
+           className={errors.fullName && touched.fullName ?'input-error' : ""}         
+            />
+             {errors.fullName && touched.fullName && <p className='error'>{errors.fullName}</p>}
+
+         
+          <label htmlFor="email"> EMAIL</label>
+            <input type="email"
+            value={values.email}
+            onChange={handleChange}
+            onBlur={handleBlur}   
+           id='email'
+             
+           className={errors.email && touched.email ?'input-error' : ""}        
+            />
+             {errors.email && touched.email && <p className='error'>{errors.email}</p>}
+
+
+            <label htmlFor="message"> MESSAGE</label>
+            <textarea 
+            
+            value={values.message}
+            onChange={handleChange}
+            onBlur={handleBlur}   
+           id='message'
+          
+           className={errors.message && touched.message ?'input-error' : ""}        
+            />
+            {errors.message && touched.message && <p className='error'>{errors.message}</p>}
+
+           <button type='submit' disabled={isSubmitting} className='bg-purple-900 mt-5 mb-10 h-12 text-white font-bold '>
+            Submit
+          </button>
+
 
 
           </form>
+         
          
 
         </div>
@@ -41,7 +101,6 @@ const Contact=()=> {
       </div>
 
     </section>
-  )
-}
-
+  );
+  };
 export default Contact

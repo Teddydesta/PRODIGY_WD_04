@@ -1,40 +1,43 @@
-import { DiTerminal } from "react-icons/Di";
 import { projects } from "../data";
+import { CodeBracketIcon } from "@heroicons/react/24/outline";
 const Projects=()=> {
   return (
-    <section id='projects' className='text-gray-900 bg-gray-100 body-font shadow-md'>
-      <div className='container px-5 py-10 mx-auto text-center lg:px-40'>
-        <div className='flex flex-col w-full mb-20'>
-          <DiTerminal className='mx-auto inline-block w-10 mb-4'>
-          </DiTerminal>
+    <section id='projects' className=' body-font '>
+      <div className='container bg-gray-800 text-white px-5 py-10 mx-auto text-center lg:px-40'>
+        <div className='flex flex-col w-full mb-20 text-center items-center'>
+        <CodeBracketIcon className="inline-block w-10 mb-4"/>
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 ">
             App,I Have Built
           </h1>
-          <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
-
-          </p>
+         
         </div>
-        <div className="flex flex-wrap -m-2">
+        <div className="flex flex-wrap lg:w-2/3 sm:mx-auto sm:mb-2 -mx-4 justify-center  ">
           {
             projects.map((project)=>(
               <a href={project.url}
                  key={project.image}
-                 className="sm:w-1/2 w-50 p-4">
-                  <div className="flex relative flex flex-row">
-                    <img src={project.image} alt="Gallery" className=" justify-center absolute inset-0 w-full h-full object-cover object-center" /> 
-                    <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900  hover:bg-gray-700 rounded-lg text-white">
+                 className="sm:w-1/2  w-50 p-4 ">
+                  <div className="bg-gray-900 flex  flex flex-col rounded-md shadow-md border-2 border-purple-900 hover:bg-gray-700">
+                    <img src={project.image} alt="Image" className="hover:bg-gray-700 h-full p-4" />
+               
+                    <div className="px-8 py-10 hover:bg-gray-700  w-full bg-gray-900 text-justify	  rounded-lg text-white">
 
                       
-                  <h2 className="tracking-widest text-sm title-font font-medium  mb-1">
+                  <h2 className=" text-sm title-font font-medium  mb-1">
                     {project.subtitle}
                   </h2>
-                  <h1 className="title-font text-lg font-medium  mb-3">
+                  <h1 className="title-font text-lg font-medium  mb-3 text-justify	">
                     {project.title}
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
+                  <div className="flex justify-center p-8 gap-5">
+        
+        <a href="#" className="inline-flex text-white  border-2 border-purple-900 py-2 px-6 focus:outline-none  rounded text-lg hover:bg-purple-900">
+                    GitHub
+
+        </a>
+
+      </div>
                 </div>
 
                   </div>
