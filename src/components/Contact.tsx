@@ -23,8 +23,8 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
  
   return (
     <section id='Contact' className='shadow-md bg-gray-800  h-full w-full  py-10 '>
-      <div className='container mx-auto flex flex-wrap flex-col pl-10'>
-       <center className='text-white'>
+      <div className='text-white container mx-auto flex flex-wrap flex-col pl-10'>
+       <center className=''>
        <h1 className='font-medium font-title font-bold text-4xl'>
           Contact Me!
         </h1>
