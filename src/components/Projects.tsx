@@ -17,10 +17,12 @@ const Projects=()=> {
               <a href={project.url}
                  key={project.image}
                  className="sm:w-1/2  w-50 p-4 ">
-                  <div className="bg-gray-900 flex  flex flex-col rounded-md shadow-md border-2 border-purple-900 hover:bg-gray-700">
+                  <div className="bg-gray-900 flex  flex flex-col rounded-md shadow-md
+                   border-2 border-green-400 hover:bg-gray-700">
                     <img src={project.image} alt="Image" className="hover:bg-gray-700 h-full p-4" />
                
-                    <div className="px-8 py-10 hover:bg-gray-700  w-full bg-gray-900 text-justify	  rounded-lg text-white">
+                    <div className="px-8 py-10 hover:bg-gray-700  w-full bg-gray-900 text-justify
+                    	  rounded-lg text-white">
 
                       
                   <h2 className=" text-sm title-font font-medium  mb-1">
@@ -32,7 +34,7 @@ const Projects=()=> {
                   <p className="leading-relaxed">{project.description}</p>
                   <div className="flex justify-center p-8 gap-5">
         
-        <a href="#" className="inline-flex text-white  border-2 border-purple-900 py-2 px-6 focus:outline-none  rounded text-lg hover:bg-purple-900">
+        <a href="#" className="inline-flex text-white  border-2 border-green-400 py-2 px-6 focus:outline-none  rounded text-lg hover:bg-purple-900">
                     GitHub
 
         </a>

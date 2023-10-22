@@ -1,13 +1,39 @@
 import '../app.css'
 import { useFormik } from 'formik';
 import { schema } from './contactForm/Schema';
+import emailjs, {send} from 'emailjs-com'
 
 const onSubmit=async (values:any,actions:any)=>{
-  await new Promise((resolve)=>setTimeout(resolve,1000,));
+  await new Promise((resolve)=>setTimeout(
+    
+    resolve,1000,));
  actions.resetForm();
   console.log(values,actions);
 }
+
+
 const Contact=()=> {
+
+  const onSubmit=async (values:any,actions:any)=>{
+  await new Promise((resolve)=>setTimeout(
+    
+    resolve,1000,));
+    SendEmail(values)
+    actions.setSubmitting(false)
+    window.alert("Sed")
+    actions.resetForm();
+   
+    
+    
+}
+  function SendEmail(object:any) {
+    emailjs.send("service_acsuqcs", "template_9x5i6ub", object,"2X1kEmQZSjXvdNvR8" )
+        .then((result) => {
+            console.log(result.text)
+        }, (error) => {
+            console.log(error.text)
+        })
+}
 const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} = useFormik({
   initialValues: {
     fullName: "",
@@ -28,7 +54,7 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
        <h1 className='font-medium font-title font-bold text-4xl'>
           Contact Me!
         </h1>
-        <hr className='w-20 border rounded-full h-1 bg-green-900 mb-4 mt-4'/>
+        <hr className='w-20 border rounded-full h-1 bg-green-400 mb-4 mt-4'/>
         <p className='leading-relaxed text-center justify-center w-1/3 text-justify	' >
         I'd Love If you reached out to me. Even if It's just to
         say "Hey". Don't hesitate!. Drop me a line I will get 
@@ -36,9 +62,12 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
 
         </p>
        </center>
-        <div className='w-full gap-20 sm:flex-row lg:w-2/3 sm:mx-auto sm:mb-2 -mx-4 flex flex-row justify-between shadow-md   mt-10 mb-10 '>
+        <div className='w-full gap-20 sm:flex-row lg:w-2/3 sm:mx-auto sm:mb-2 -mx-4 
+        flex flex-row justify-between shadow-md   mt-10 mb-10 '>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img src="src/assets/hero.png" alt="Hero" className="object-cover  rounded-full  h-120 transition-all duration-300 cursor-pointer    "/>
+              <img src="src/assets/contact.gif" alt="Hero" 
+              className="object-cover  rounded-lg  h-120 transition-all duration-300
+               cursor-pointer    "/>
 
             </div>
          
@@ -85,7 +114,8 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
             />
             {errors.message && touched.message && <p className='error'>{errors.message}</p>}
 
-           <button type='submit' disabled={isSubmitting} className='bg-purple-900 mt-5 mb-10 h-12 text-white font-bold '>
+           <button type='submit' disabled={isSubmitting} 
+           className='bg-purple-900 mt-5 mb-10 h-12 text-white font-bold '>
             Submit
           </button>
 

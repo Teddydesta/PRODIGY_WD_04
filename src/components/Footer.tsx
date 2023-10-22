@@ -1,7 +1,7 @@
 
 export default function Footer() {
   return (
-    <div className=' bg-gray-900 text-white '>
+    <div className=' bg-gray-900 text-white md:flex-col '>
          <hr className='w-full  bg-green-900'/>
       <div className='justify-center flex flex-row mr-0 pt-12'>
       <p>@copyright 2023. Tewodros Desta</p>
