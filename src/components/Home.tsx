@@ -13,8 +13,8 @@ function Home() {
 
         </a>
         <a href="#projects" 
-        className="inline-flex text-white  border-none hover:bg-sky-700
-         py-2 px-6 focus:outline-none bg-sky-500 rounded text-lg">
+        className="inline-flex text-white  border-none 
+         py-2 px-6 focus:outline-none bg-blue-500  hover:bg-blue-700 rounded text-lg">
                     Se My Projects
 
         </a>

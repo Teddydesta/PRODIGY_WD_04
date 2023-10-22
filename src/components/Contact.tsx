@@ -49,7 +49,7 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
  
   return (
     <section id='Contact' className='shadow-md bg-gray-800  h-full w-full  py-10 '>
-      <div className='text-white container mx-auto flex flex-wrap flex-col pl-10'>
+      <div className='text-white container mx-auto flex  flex-col pl-10 sm:flex-col'>
        <center className=''>
        <h1 className='font-medium font-title font-bold text-4xl'>
           Contact Me!
@@ -66,7 +66,7 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
         flex flex-row justify-between shadow-md   mt-10 mb-10 '>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <img src="src/assets/contact.gif" alt="Hero" 
-              className="object-cover  rounded-lg  h-120 transition-all duration-300
+              className=" rounded-lg  h-120 transition-all duration-300
                cursor-pointer    "/>
 
             </div>
@@ -115,7 +115,7 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
             {errors.message && touched.message && <p className='error'>{errors.message}</p>}
 
            <button type='submit' disabled={isSubmitting} 
-           className='bg-purple-900 mt-5 mb-10 h-12 text-white font-bold '>
+           className='bg-blue-500  hover:bg-blue-700 mt-5 mb-10 h-12 text-white font-bold '>
             Submit
           </button>
 
