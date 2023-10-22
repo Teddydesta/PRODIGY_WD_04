@@ -1,7 +1,9 @@
 import '../app.css'
+import {useState} from 'react'
 import { useFormik } from 'formik';
 import { schema } from './contactForm/Schema';
 import emailjs, {send} from 'emailjs-com'
+const [statusMessage,setStatusMessage]=useState('')
 
 const onSubmit=async (values:any,actions:any)=>{
   await new Promise((resolve)=>setTimeout(
@@ -23,15 +25,24 @@ const Contact=()=> {
     window.alert("Sed")
     actions.resetForm();
    
-    
-    
+
 }
   function SendEmail(object:any) {
     emailjs.send("service_acsuqcs", "template_9x5i6ub", object,"2X1kEmQZSjXvdNvR8" )
         .then((result) => {
             console.log(result.text)
+            setStatusMessage('Email Sent Successfully')
+            setTimeout(()=>
+            {setStatusMessage('');
+
+          },3000)
         }, (error) => {
             console.log(error.text)
+            setStatusMessage('Faild to send email')
+            setTimeout(() => {
+              setStatusMessage('')
+              
+            }, 3000);
         })
 }
 const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} = useFormik({
@@ -122,9 +133,7 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
 
 
           </form>
-         
-         
-
+          <p>{statusMessage}</p>
         </div>
       
      
