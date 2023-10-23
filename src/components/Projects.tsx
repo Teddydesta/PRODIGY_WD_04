@@ -32,10 +32,16 @@ const Projects=()=> {
                     {project.title}
                   </h1>
                   <p className="leading-relaxed">{project.description}</p>
-                  <div className="flex justify-center p-8 gap-5">
+                  <div className="flex justify-center p-8 gap-5 ">
         
-        <a href="#" className="inline-flex text-white  border-2 border-green-400 py-2 px-6 focus:outline-none  rounded text-lg hover:bg-purple-900">
-                    GitHub
+        <a href={project.url} className="inline-flex text-white  border-2 border-green-400
+          focus:outline-none  rounded text-lg hover:bg-purple-900 h-12 w-36 pl-5 ">
+                    {project.btn1}
+
+        </a>
+        <a href="#" className="inline-flex text-white  border-2 border-green-400
+         focus:outline-none  rounded text-lg hover:bg-purple-900 w-36 px-5">
+                    {project.btn2}
 
         </a>
 

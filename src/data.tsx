@@ -5,6 +5,8 @@ export const projects=[
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis ',
         image: 'src/assets/timer.png',
         url: '/',
+        btn1: 'View Site',
+        btn2: 'Github',
     },
     {
         title: 'Gebeta Food Delivery',
@@ -12,6 +14,8 @@ export const projects=[
         description: "connects consumers with local restaurants, grocery stores, convenience stores, by providing a convenient way to order food ",
         image: 'src/assets/food.jpg',
         url: '/',
+        btn1: 'View Site',
+        btn2: 'Github',
     },
     {
         title: 'Doctor Advisory App',
@@ -19,13 +23,17 @@ export const projects=[
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis ',
         image: 'src/assets/doctor.png',
         url: '/',
+        btn1: 'View Site',
+        btn2: 'Github',
     },
     {
         title: 'Weather App',
         subtitle: 'React',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate ',
         image: 'src/assets/wheather.jpg',
-        url: '/',
+        url: 'https://wheather-ragdu.netlify.app/',
+        btn1: 'View Site',
+        btn2: 'Github',
     },
 ]
 
