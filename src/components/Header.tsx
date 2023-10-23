@@ -4,6 +4,7 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
+    <section>
     <div className="flex sticky top-0 fixed items-center
      justify-between text-white bg-gray-900 border-b border-green-800 py-4">
       <a href="#home">
@@ -90,5 +91,6 @@ export default function Header() {
       }
     `}</style>
     </div>
+    </section>
   );
 }

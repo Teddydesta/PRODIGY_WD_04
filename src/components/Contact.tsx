@@ -79,16 +79,11 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
               <img src="src/assets/contact.gif" alt="Hero" 
               className=" rounded-lg  h-120 transition-all duration-300
                cursor-pointer    "/>
-
-            </div>
-         
-            <form  
-          
+            </div>         
+            <form           
           action="" 
           autoComplete='off'
-          onSubmit={handleSubmit}
-          
-          >
+          onSubmit={handleSubmit}>
             <label htmlFor="fullName">FULL NAME</label>
             <input type="text"
             value={values.fullName}
@@ -114,20 +109,20 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
 
 
             <label htmlFor="message"> MESSAGE</label>
-            <textarea 
-            
+            <textarea             
             value={values.message}
             onChange={handleChange}
             onBlur={handleBlur}   
-           id='message'
-          
+           id='message'         
            className={errors.message && touched.message ?'input-error' : ""}        
             />
             {errors.message && touched.message && <p className='error'>{errors.message}</p>}
 
            <button type='submit' disabled={isSubmitting} 
+           
            className='bg-blue-500  hover:bg-blue-700 mt-5 mb-10 h-12 text-white font-bold '>
             Submit
+            
           </button>
 
 

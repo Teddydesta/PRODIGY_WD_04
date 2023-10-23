@@ -1,12 +1,23 @@
 export const projects=[
     {
-        title: 'StopWatch ',
-        subtitle: 'React.js',
+        title: 'Anomodoro',
+        subtitle: 'React,Tailwindcss',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate ',
+        image: 'src/assets/anomodoro.png',
+        url: 'https://anomodoro.netlify.app/',
+        btn1: 'View Site',
+        btn2: 'Github',
+        github: 'https://github.com/Teddydesta/stopwatch.git'
+    },
+    {
+        title: 'Weather App ',
+        subtitle: 'React.js css',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis ',
-        image: 'src/assets/timer.png',
+        image: 'src/assets/wheather-app.png',
         url: '/',
         btn1: 'View Site',
         btn2: 'Github',
+        github: 'https://github.com/Teddydesta/weather-app.git'
     },
     {
         title: 'Gebeta Food Delivery',
@@ -16,7 +27,10 @@ export const projects=[
         url: '/',
         btn1: 'View Site',
         btn2: 'Github',
+        github: 'https://github.com/Teddydesta/gebeta-app.git'
     },
+  
+   
     {
         title: 'Doctor Advisory App',
         subtitle: 'flutter and Django',
@@ -25,15 +39,7 @@ export const projects=[
         url: '/',
         btn1: 'View Site',
         btn2: 'Github',
-    },
-    {
-        title: 'Weather App',
-        subtitle: 'React',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate ',
-        image: 'src/assets/wheather.jpg',
-        url: 'https://wheather-ragdu.netlify.app/',
-        btn1: 'View Site',
-        btn2: 'Github',
+        github: 'https://github.com/Teddydesta/stopwatch.git'
     },
 ]
 
@@ -64,7 +70,7 @@ export const skills=[
     'DART',
     'FLUTTER',
     'REACT',
-    'DJANGO',
+    'NodeJs',
     'MongoDB',
     
     'Nextjs'
