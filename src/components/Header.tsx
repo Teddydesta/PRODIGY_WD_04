@@ -45,13 +45,13 @@ export default function Header() {
             </div>
             <ul className="flex flex-col  items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8  hover:text-green-400">
-                <a href="/About">About</a>
+                <a href="#About">About</a>
               </li>
               <li className="border-b border-gray-400 my-8  hover:text-green-400">
-                <a href="/projects">Projects</a>
+                <a href="#projects">Projects</a>
               </li>
               <li className="border-b border-gray-400 my-8  hover:text-green-400">
-                <a href="/Contact">Contact</a>
+                <a href="#Contact">Contact</a>
               </li>
             </ul>
           </div>
