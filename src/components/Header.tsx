@@ -57,8 +57,8 @@ export default function Header() {
           </div>
         </section>
 
-      <section>
-      <ul className="DESKTOP-MENU hidden  space-x-8 lg:flex mr-10 ">
+      <section className="DESKTOP-MENU  hidden  space-x-8 lg:flex mr-10 ">
+      <ul className="">
           <li className="hover:text-green-400 hover:text-green-400 
           border-2 border-green-500 rounded-md w-24 p-2 text-center">
             <a href="#About">About</a>
