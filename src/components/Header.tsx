@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { BrowserRouter,Routes,Route, Link} from "react-router-dom";
+import About from "./About";
+import Projects from "./Projects";
+import Contact from "./Contact";
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -51,28 +54,35 @@ export default function Header() {
                 <a href="#projects">Projects</a>
               </li>
               <li className="border-b border-gray-400 my-8  hover:text-green-400">
-                <a href="#Contact">Contact</a>
+                <a href="">Contact</a>
               </li>
             </ul>
           </div>
         </section>
 
-      <section className="DESKTOP-MENU  hidden  space-x-8 lg:flex mr-10 ">
-      <ul className="">
-          <li className="hover:text-green-400 hover:text-green-400 
-          border-2 border-green-500 rounded-md w-24 p-2 text-center">
-            <a href="#About">About</a>
-          </li>
-          <li className="hover:text-green-400 hover:text-green-400
-           border-2 border-green-500 rounded-md w-24 p-2 text-center">
-            <a href="#projects">projects</a>
-          </li>
-          <li className="hover:text-green-400 hover:text-green-400 
-          border-2 border-green-500 rounded-md w-24 p-2 text-center">
-            <a href="#Contact">Contact</a>
-          </li>
+      <BrowserRouter>
+      <Routes>
+      <ul className="DESKTOP-MENU  hidden  space-x-8 lg:flex mr-10">
+        
+
+          <Link className="hover:text-green-400 hover:text-green-400 
+          border-2 border-green-500 rounded-md w-24 p-2 text-center"
+            to="/about">About
+          </Link>
+          <Link className="hover:text-green-400 hover:text-green-400
+           border-2 border-green-500 rounded-md w-24 p-2 text-center"
+           to="/projects">Projects
+          </Link>
+          <Link className="hover:text-green-400 hover:text-green-400 
+          border-2 border-green-500 rounded-md w-24 p-2 text-center"
+             to="/contact">Contact
+          </Link>
         </ul>
-      </section>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/project" element={<Projects/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+      </BrowserRouter>
       </nav>
       <style>{`
       .hideMenuNav {
