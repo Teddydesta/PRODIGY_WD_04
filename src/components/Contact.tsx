@@ -1,16 +1,16 @@
 import '../app.css'
 import { useFormik } from 'formik';
 import { schema } from './contactForm/Schema';
-import emailjs, {send} from 'emailjs-com'
+import emailjs from 'emailjs-com'
 // const [statusMessage,setStatusMessage]=useState('')
 
-const onSubmit=async (values:any,actions:any)=>{
-  await new Promise((resolve)=>setTimeout(
+// const onSubmit=async (values:any,actions:any)=>{
+//   await new Promise((resolve)=>setTimeout(
     
-    resolve,1000,));
- actions.resetForm();
-  console.log(values,actions);
-}
+//     resolve,1000,));
+//  actions.resetForm();
+//   console.log(values,actions);
+// }
 
 
 const Contact=()=> {
