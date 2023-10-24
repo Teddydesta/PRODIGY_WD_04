@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { BrowserRouter,Routes,Route } from "react-router-dom";
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -57,7 +57,8 @@ export default function Header() {
           </div>
         </section>
 
-        <ul className="DESKTOP-MENU hidden  space-x-8 lg:flex mr-10 ">
+      <section>
+      <ul className="DESKTOP-MENU hidden  space-x-8 lg:flex mr-10 ">
           <li className="hover:text-green-400 hover:text-green-400 
           border-2 border-green-500 rounded-md w-24 p-2 text-center">
             <a href="#About">About</a>
@@ -71,6 +72,7 @@ export default function Header() {
             <a href="#Contact">Contact</a>
           </li>
         </ul>
+      </section>
       </nav>
       <style>{`
       .hideMenuNav {
