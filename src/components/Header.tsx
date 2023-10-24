@@ -9,7 +9,7 @@ export default function Header() {
      justify-between text-white bg-gray-900 border-b border-green-800  py-6 sticky top-0 fixed">
       
       <a href="#home">
-        <img src="src/assets/logo.png" alt="logo"
+        <img src="public/static/images/logo.png" alt="logo"
         className="rounded-full h-12 ml-10" />
       </a>
 

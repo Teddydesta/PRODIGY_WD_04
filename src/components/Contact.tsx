@@ -69,11 +69,11 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
         <div className='w-full gap-20 sm:flex-row lg:w-2/3 sm:mx-auto sm:mb-2 -mx-4 
         flex flex-row justify-between shadow-md   mt-10 mb-10 '>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-              <img src="src/assets/contact.gif" alt="Hero" 
+              <img src="public/static/images/contact.gif" alt="Hero" 
               className=" rounded-lg  h-120 transition-all duration-300
                cursor-pointer    "/>
-            </div>         
-            <form           
+        </div>         
+         <form           
           action="" 
           autoComplete='off'
           onSubmit={handleSubmit}>

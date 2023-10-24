@@ -25,7 +25,7 @@ export default function About() {
                   </p>
            </center>
             <div className="container w-full   ">
-              <img src="src/assets/man.png" alt="Hero" className="object-cover object-center    transition-all  cursor-pointer  overflow-hidden  sm:hidden  hiden lg:block "/>
+              <img src="public/static/images/man.png" alt="Hero" className="object-cover object-center    transition-all  cursor-pointer  overflow-hidden  sm:hidden  hiden lg:block "/>
 
             </div>
         </div>
