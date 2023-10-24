@@ -2,7 +2,8 @@ import {links} from '../data'
 
 const Navbar=()=> {
   return (
-    <nav className="bg-gray-900 text-white border-gray-200 dark:bg-gray-900 shadow-md justify-between sticky top-0 fixed h-20 pb-4">
+    <nav className="bg-gray-900 text-white border-gray-200 dark:bg-gray-900
+     shadow-md justify-between sticky top-0 fixed h-20 pb-4">
   <div className="max-w-screen-xl flex flex-row items-center justify-between mx-auto ">
     <a href="#home" className="flex items-center justify-center">
         <img src="src/assets/logo.png" className=" rounded-full h-20 p-4 " alt="Logo" />

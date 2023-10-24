@@ -1,4 +1,3 @@
-import React from 'react'
 import {skills} from '../data'
 //import { BadgeCheckIcon } from "@heroicons/react/solid";
 import { CodeBracketIcon } from "@heroicons/react/24/outline";

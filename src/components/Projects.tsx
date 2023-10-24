@@ -6,7 +6,7 @@ const Projects=()=> {
       <div className='container bg-gray-800 text-white px-5 py-10 mx-auto text-center lg:px-40'>
         <div className='flex flex-col w-full mb-20 text-center items-center'>
         <CodeBracketIcon className="inline-block w-10 mb-4"/>
-          <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 ">
+          <h1 className="sm:text-4xl text-3xl font-medium title-font  ">
             App,I Have Built
           </h1>
          
@@ -20,7 +20,7 @@ const Projects=()=> {
                  className="sm:w-1/2   p-4 ">
                   <div className="bg-gray-900 flex  flex flex-col rounded-md shadow-md
                    border-2 border-green-400 hover:bg-gray-800">
-                    <img src={project.image} alt="Image" className="h-40  w-full" />
+                    <img src={project.image} alt="Image" className="h-40 p-2  rounded-md w-full" />
                
                     <div className="px-4 py-4   w-full bg-gray-900 text-justify
                     	  rounded-lg text-white hover:bg-gray-800">

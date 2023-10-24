@@ -4,9 +4,10 @@ export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <section>
-    <div className="flex sticky top-0 fixed items-center
-     justify-between text-white bg-gray-900 border-b border-green-800 py-4">
+   
+    <div className="flex items-center  
+     justify-between text-white bg-gray-900 border-b border-green-800  py-6 sticky top-0 fixed">
+      
       <a href="#home">
         <img src="src/assets/logo.png" alt="logo"
         className="rounded-full h-12 ml-10" />
@@ -44,13 +45,13 @@ export default function Header() {
             </div>
             <ul className="flex flex-col  items-center justify-between min-h-[250px]">
               <li className="border-b border-gray-400 my-8  hover:text-green-400">
-                <a href="#About">About</a>
+                <a href="/About">About</a>
               </li>
               <li className="border-b border-gray-400 my-8  hover:text-green-400">
-                <a href="#projects">Portfolio</a>
+                <a href="/projects">Projects</a>
               </li>
               <li className="border-b border-gray-400 my-8  hover:text-green-400">
-                <a href="#Contact">Contact</a>
+                <a href="/Contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -63,7 +64,7 @@ export default function Header() {
           </li>
           <li className="hover:text-green-400 hover:text-green-400
            border-2 border-green-500 rounded-md w-24 p-2 text-center">
-            <a href="#projects">Portfolio</a>
+            <a href="#projects">projects</a>
           </li>
           <li className="hover:text-green-400 hover:text-green-400 
           border-2 border-green-500 rounded-md w-24 p-2 text-center">
@@ -91,6 +92,6 @@ export default function Header() {
       }
     `}</style>
     </div>
-    </section>
+ 
   );
 }

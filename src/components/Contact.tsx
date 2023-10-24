@@ -1,5 +1,4 @@
 import '../app.css'
-import {useState} from 'react'
 import { useFormik } from 'formik';
 import { schema } from './contactForm/Schema';
 import emailjs, {send} from 'emailjs-com'
@@ -22,27 +21,21 @@ const Contact=()=> {
     resolve,1000,));
     SendEmail(values)
     actions.setSubmitting(false)
-    window.alert("Sed")
+    window.alert("Sent Successfully!")
+    
     actions.resetForm();
    
 
 }
   function SendEmail(object:any) {
-    emailjs.send("service_acsuqcs", "template_9x5i6ub", object,"2X1kEmQZSjXvdNvR8" )
+    emailjs.send("service_83pytwe", "template_4nzezf7", object,"BR9xc44icmQb-8fKu" )
         .then((result) => {
             console.log(result.text)
-          //   setStatusMessage('Email Sent Successfully')
-          //   setTimeout(()=>
-          //   {setStatusMessage('');
 
-          // },3000)
+            
         }, (error) => {
             console.log(error.text)
-            // setStatusMessage('Faild to send email')
-            // setTimeout(() => {
-            //   setStatusMessage('')
-              
-            // }, 3000);
+           
         })
 }
 const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} = useFormik({
