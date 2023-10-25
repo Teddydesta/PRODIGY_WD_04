@@ -31,16 +31,16 @@ export const projects=[
     },
   
    
-    {
-        title: 'Medical Advisory',
-        subtitle: 'MERN stack',
-        description: 'Provides  healthcare information, enabling users to manage their health and well-being conveniently and securely. ',
-        image: '/static/images/doctor.png',
-        url: '/',
-        btn1: 'Github',
-        btn2: 'private',
-        github: '/'
-    },
+    // {
+    //     title: 'Medical Advisory',
+    //     subtitle: 'MERN stack',
+    //     description: 'Provides  healthcare information, enabling users to manage their health and well-being conveniently and securely. ',
+    //     image: '/static/images/doctor.png',
+    //     url: '/',
+    //     btn1: 'Github',
+    //     btn2: 'private',
+    //     github: '/'
+    // },
 ]
 
 export const links=[
