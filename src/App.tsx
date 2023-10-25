@@ -9,7 +9,6 @@ const App=()=>{
   return (
 <main className="">
   <Header/>
-  {/* {/* <Navbar/> */}
   <Home/>
   <About/>
   <Projects/>

@@ -1,4 +1,8 @@
 import { useState } from "react";
+// import { BrowserRouter,Routes,Route,Link } from "react-router-dom";
+// import About from "./About";
+// import Contact from "./Contact";
+// import Projects from "./Projects";
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
@@ -90,6 +94,13 @@ export default function Header() {
         align-items: center;
       }
     `}</style>
+    {/* <BrowserRouter>
+        <Routes>
+          <Route path="/about" element={<About/>}/>
+          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+        </Routes>
+    </BrowserRouter> */}
     </div>
  
   );

@@ -34,7 +34,7 @@ export const projects=[
     {
         title: 'Medical Advisory',
         subtitle: 'MERN stack',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis ',
+        description: ' It provides a one-stop solution for healthcare information, enabling users to manage their health and well-being conveniently and securely. ',
         image: '/static/images/doctor.png',
         url: '/',
         btn1: 'Github',
