@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
