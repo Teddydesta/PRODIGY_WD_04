@@ -33,11 +33,11 @@ export const projects=[
    
     {
         title: 'Medical Advisory',
-        subtitle: 'MERN',
+        subtitle: 'MERN stack',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis ',
         image: '/static/images/doctor.png',
         url: '/',
-        btn1: 'website',
+        btn1: 'Github',
         btn2: 'private',
         github: '/'
     },
