@@ -25,7 +25,9 @@ export default function About() {
                   </p>
            </center>
             <div className="container w-full   ">
-              <img src="/static/images/man.png" alt="Hero" className="object-cover object-center    transition-all  cursor-pointer  overflow-hidden  sm:hidden  hiden lg:block "/>
+              <img src="/static/images/man.png" alt="Hero"
+               className="flex md:hidden object-cover object-center 
+               transition-all  cursor-pointer  overflow-hidden lg:block sm:hidden"/>
 
             </div>
         </div>

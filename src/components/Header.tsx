@@ -8,7 +8,7 @@ export default function Header() {
 
   return (
    
-    <div className="flex items-center  
+    <div className="flex items-center 
      justify-between text-white bg-gray-900 border-b border-green-800  py-6 sticky top-0 fixed">
       
       <a href="#home">
@@ -18,7 +18,7 @@ export default function Header() {
 
       
       <nav>
-        <section className="MOBILE-MENU flex lg:hidden bg-gray-900 cursor-pointer">
+        <section className="MOBILE-MENU flex lg:hidden bg-white-900 cursor-pointer">
           <div
             className="HAMBURGER-ICON space-y-2 "
             onClick={() => setIsNavOpen((prev) => !prev)}

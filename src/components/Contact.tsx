@@ -52,26 +52,26 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
 
  
   return (
-    <section id='Contact' className='shadow-md bg-gray-800  h-full w-full  py-10 '>
-      <div className='text-white container mx-auto flex  flex-col pl-10 sm:flex-col'>
+    <section id='Contact' className=''>
+      <div className='shadow-md bg-gray-800  text-white container  flex  flex-col items-center'>
        <center className=''>
        <h1 className='font-medium font-title font-bold text-4xl'>
           Contact Me!
         </h1>
         <hr className='w-20 border rounded-full h-1 bg-green-400 mb-4 mt-4'/>
-        <p className='leading-relaxed text-center justify-center w-1/3 text-justify	' >
+        <p className='leading-relaxed text-center  text-justify	w-2/3' >
         I'd Love If you reached out to me. Even if It's just to
         say "Hey". Don't hesitate!. Drop me a line I will get 
         back to you as soon as possible.  
 
         </p>
        </center>
-        <div className='w-full gap-20 sm:flex-row lg:w-2/3 sm:mx-auto sm:mb-2 -mx-4 
-        flex flex-row justify-between shadow-md   mt-10 mb-10 '>
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <div className='w-full  lg:flex-row lg:w-2/3 s sm:mb-2 
+        flex  justify-between shadow-md   mt-10 mb-10 '>
+        <div className="lg:max-w-lg lg:w-full  fit-content">
               <img src="/static/images/contact.gif" alt="Hero" 
               className=" rounded-lg  h-120 transition-all duration-300
-               cursor-pointer  sm:hidden  "/>
+               cursor-pointer   "/>
         </div>         
          <form           
           action="" 
