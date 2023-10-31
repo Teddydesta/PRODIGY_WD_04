@@ -7,7 +7,7 @@ import { CheckBadgeIcon } from '@heroicons/react/20/solid';
 const Skills=()=> {
   return (
     <section id='skills 	'>
-      <div className='container px-5 py-10 mx-auto bg-gray-900 text-white '>
+      <div className='bg-gray-900 text-white sm:flex-col shadow-md justify-between  '>
         <div className='mb-20 text-center'>
           <CodeBracketIcon className="inline-block w-10 mb-4"/>
           <h1 className='sm:text-4xl text-3xlfont-medium title-font  mb-4'>

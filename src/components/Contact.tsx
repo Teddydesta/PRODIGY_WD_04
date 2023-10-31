@@ -53,7 +53,7 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
  
   return (
     <section id='Contact' className=''>
-      <div className='shadow-md bg-gray-800  text-white container  flex  flex-col items-center'>
+      <div className='bg-gray-900 text-white sm:flex-col shadow-md justify-between '>
        <center className=''>
        <h1 className='font-medium font-title font-bold text-4xl'>
           Contact Me!
@@ -66,12 +66,12 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
 
         </p>
        </center>
-        <div className=' flex sm:flex-col lg:flex-row lg:w-2/3 s sm:mb-2  
-        flex  justify-between shadow-md   mt-10 mb-10 sm:max-w-2xl'>
-        <div className="lg:max-w-lg lg:w-full  fit-content">
+        <div className=' flex sm:flex-col lg:flex-row   sm:mb-2 lg:gap-10
+        flex  justify-between shadow-md '>
+        <div className="">
               <img src="/static/images/contact.gif" alt="Hero" 
-              className=" rounded-lg  h-120 transition-all duration-300
-               cursor-pointer   "/>
+              className=" rounded-lg  transition-all duration-300
+               cursor-pointer fit-content  "/>
         </div>         
          <form           
           action="" 

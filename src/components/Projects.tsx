@@ -3,7 +3,7 @@ import { CodeBracketIcon } from "@heroicons/react/24/outline";
 const Projects=()=> {
   return (
     <section id='projects' className=' body-font '>
-      <div className='container bg-gray-800 text-white px-5 py-10 mx-auto text-center lg:px-40'>
+      <div className='bg-gray-900 text-white sm:flex-col shadow-md justify-between '>
         <div className='flex flex-col w-full mb-20 text-center items-center'>
         <CodeBracketIcon className="inline-block w-10 mb-4"/>
           <h1 className="sm:text-4xl text-3xl font-medium title-font  ">
