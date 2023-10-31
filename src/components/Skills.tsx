@@ -6,9 +6,9 @@ import { CheckBadgeIcon } from '@heroicons/react/20/solid';
 
 const Skills=()=> {
   return (
-    <section id='skills 	'>
-      <div className='bg-gray-900 text-white sm:flex-col shadow-md justify-between  '>
-        <div className='mb-20 text-center'>
+    <section id='skills'>
+      <div className='bg-gray-900 text-white shadow-md  '>
+        <div className='mb-10 text-center'>
           <CodeBracketIcon className="inline-block w-10 mb-4"/>
           <h1 className='sm:text-4xl text-3xlfont-medium title-font  mb-4'>
             Skills &amp; Technologies
@@ -21,12 +21,13 @@ const Skills=()=> {
           </p> */}
 
         </div>
-        <div className='flex flex-wrap lg:w-2/3 sm:mx-auto sm:mb-2 -mx-4 justify-center'>
+        <div className='grid lg:grid-cols-4 col-start-2 gap-4 pb-10
+         md:grid-cols-2 gap-4 sm:grid-cols-2 gap-4 px-10 justify-center '>
           {skills.map((skill)=>(
-            <div className='p-2 sm:w-1/2 w-full'>
-              <div className='bg-gray-800 rounded-md flex flex-row p-4 h-full items-center hover:bg-gray-500 cursor-pointer'>
-              <CheckBadgeIcon className="inline-block w-10 fill-white mb-0 pr-4  justify-center rounded-full flex-shrink-0 " />
-              <span className='title-font font-medium text-white'>
+            <div className='  '>
+              <div className='bg-gray-800 rounded-md flex flex-row  py-14 justify-center  items-center hover:bg-gray-500 cursor-pointer'>
+              <CheckBadgeIcon className="inline-block w-10 fill-white  pr-4   rounded-full flex-shrink-0 " />
+              <span className='title-font font-bold text-white'>
               {skill}
 
               </span>

@@ -2,22 +2,22 @@ import { projects } from "../data";
 import { CodeBracketIcon } from "@heroicons/react/24/outline";
 const Projects=()=> {
   return (
-    <section id='projects' className=' body-font '>
-      <div className='bg-gray-900 text-white sm:flex-col shadow-md justify-between '>
-        <div className='flex flex-col w-full mb-20 text-center items-center'>
+    <section id='projects'>
+      <div className='bg-gray-800 text-white sm:flex-col   '>
+        <div className='flex flex-col  mb-20 text-center items-center'>
         <CodeBracketIcon className="inline-block w-10 mb-4"/>
           <h1 className="sm:text-4xl text-3xl font-medium title-font  ">
             App,I Have Built
           </h1>
          
         </div>
-        <div className="flex flex-wrap lg:w-2/3 md:mx-auto sm:mx-auto px-10
-         sm:mb-2  justify-center   ">
+        <div className="flex flex-wrap lg:w-2/3 md:mx-auto sm:mx-auto md:px-10
+      justify-center   ">
           {
             projects.map((project)=>(
               <div 
                  key={project.image}
-                 className="sm:w-1/2   p-4 ">
+                 className="sm:w-1/2 p-4 ">
                   <div className="bg-gray-900 flex  flex flex-col rounded-md shadow-md
                    border-2 border-green-400 hover:bg-gray-800">
                     <img src={project.image} alt="Image" className="h-40 p-2  rounded-md w-full" />

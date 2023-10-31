@@ -53,24 +53,23 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
  
   return (
     <section id='Contact' className=''>
-      <div className='bg-gray-900 text-white sm:flex-col shadow-md justify-between '>
+      <div className='bg-gray-900 text-white px-20 shadow-md justify-between '>
        <center className=''>
        <h1 className='font-medium font-title font-bold text-4xl'>
           Contact Me!
         </h1>
         <hr className='w-20 border rounded-full h-1 bg-green-400 mb-4 mt-4'/>
-        <p className='leading-relaxed text-center  text-justify	w-2/3' >
+        <p className='leading-relaxed text-center  text-justify	w-2/4' >
         I'd Love If you reached out to me. Even if It's just to
         say "Hey". Don't hesitate!. Drop me a line I will get 
         back to you as soon as possible.  
 
         </p>
        </center>
-        <div className=' flex sm:flex-col lg:flex-row   sm:mb-2 lg:gap-10
-        flex  justify-between shadow-md '>
+        <div className='lg:gap-20 justify-between pb-20 lg:flex items-center justify-center mx-auto '>
         <div className="">
               <img src="/static/images/contact.gif" alt="Hero" 
-              className=" rounded-lg  transition-all duration-300
+              className=" rounded-md  transition-all duration-300
                cursor-pointer fit-content  "/>
         </div>         
          <form           
@@ -113,7 +112,7 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
 
            <button type='submit' disabled={isSubmitting} 
            
-           className='bg-blue-500  hover:bg-blue-700 mt-5 mb-10 h-12 text-white font-bold '>
+           className='bg-blue-500  hover:bg-blue-700 mt-5 h-12 text-white font-bold '>
             Submit
             
           </button>

@@ -1,8 +1,8 @@
 
 export default function About() {
   return (
-    <section id='About' className="bg-gray-900 text-white sm:flex-col shadow-md justify-between ">
-        <div className='container mx-auto flex px-10 py-20  flex-row items-center  '>
+    <section id='About'>
+        <div className='p-20 w-full bg-gray-900 text-white flex  items-center  '>
            <center>
            <h1 className="sm:text-4xl text-3xlfont-medium title-font  mb-4">About Me</h1>
                    
@@ -24,10 +24,10 @@ export default function About() {
                      capable developer in the ever-evolving tech landscape.
                   </p>
            </center>
-            <div className="container w-full   ">
+            <div className="w-full   ">
               <img src="/static/images/man.png" alt="Hero"
-               className="flex md:hidden object-cover object-center 
-               transition-all  cursor-pointer  overflow-hidden lg:block sm:hidden"/>
+               className="flex sm:hidden object-cover object-center 
+               transition-all  cursor-pointer  overflow-hidden lg:block"/>
 
             </div>
         </div>
