@@ -11,7 +11,7 @@ const Projects=()=> {
           </h1>
          
         </div>
-        <div className="flex flex-wrap lg:w-2/3 md:mx-auto sm:mx-auto md:px-10
+        <div className="flex flex-wrap lg:w-2/3 md:mx-auto sm:mx-10 md:mx-10
       justify-center   ">
           {
             projects.map((project)=>(
