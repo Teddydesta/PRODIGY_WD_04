@@ -16,7 +16,13 @@ export default {
         
      
     },
-    extend: {},
+    extend: {
+      'sm': '480px',
+      'md': '480px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px'
+    },
     
     screens: {
      

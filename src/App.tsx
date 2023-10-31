@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 const App=()=>{
   return (
-<main className="">
+<main>
   <Header/>
   <Home/>
   <About/>

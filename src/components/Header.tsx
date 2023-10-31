@@ -34,7 +34,7 @@ export default function Header() {
               onClick={() => setIsNavOpen(false)}
             >
               <svg
-                className="h-8 w-8 text-gray-100 cursor-pointer"
+                className="h-8 w-8 text-gray-900 cursor-pointer"
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -80,13 +80,16 @@ export default function Header() {
         display: none;
       }
       .showMenuNav {
+        border-radius: 10px;
+        font-weight: bold;
+        color: black;
         display: block;
         position: absolute;
         width: 100%;
-        height: 100vh;
+        height: 280px;
         top: 0;
         left: 0;
-        background-color: rgb(17 24 39);
+        background-color: rgb(255 255 255);
         z-index: 10;
         display: flex;
         flex-direction: column;

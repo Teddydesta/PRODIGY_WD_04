@@ -66,8 +66,8 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
 
         </p>
        </center>
-        <div className='w-full  lg:flex-row lg:w-2/3 s sm:mb-2 
-        flex  justify-between shadow-md   mt-10 mb-10 '>
+        <div className=' flex sm:flex-col lg:flex-row lg:w-2/3 s sm:mb-2  
+        flex  justify-between shadow-md   mt-10 mb-10 sm:max-w-2xl'>
         <div className="lg:max-w-lg lg:w-full  fit-content">
               <img src="/static/images/contact.gif" alt="Hero" 
               className=" rounded-lg  h-120 transition-all duration-300
