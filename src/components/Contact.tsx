@@ -98,8 +98,6 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
            className={errors.email && touched.email ?'input-error' : ""}        
             />
              {errors.email && touched.email && <p className='error'>{errors.email}</p>}
-
-
             <label htmlFor="message"> MESSAGE</label>
             <textarea             
             value={values.message}
@@ -112,7 +110,7 @@ const {handleChange,values,touched,isSubmitting,handleBlur,handleSubmit,errors} 
 
            <button type='submit' disabled={isSubmitting} 
            
-           className='bg-blue-500  hover:bg-blue-700 mt-5 h-12 text-white font-bold '>
+           className='bg-indigo-500  hover:bg-blue-700 mt-5 h-12 text-white font-bold '>
             Submit
             
           </button>

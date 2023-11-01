@@ -62,15 +62,15 @@ export default function Header() {
 
         <ul className="DESKTOP-MENU hidden  space-x-12 lg:flex mr-10 ">
           <li className="hover:text-green-400 hover:text-green-400 
-          border-2 border-green-500 rounded-md w-24 p-2 text-center">
-            <a href="#About">About</a>
+          border-2 border-indigo-500 rounded-md w-24 p-2 text-center">
+            <a href="#About" className="hover:border-b-indigo-500">About</a>
           </li>
           <li className="hover:text-green-400 hover:text-green-400
-           border-2 border-green-500 rounded-md w-24 p-2 text-center">
+           border-2 border-indigo-500 rounded-md w-24 p-2 text-center">
             <a href="#projects">projects</a>
           </li>
           <li className="hover:text-green-400 hover:text-green-400 
-          border-2 border-green-500 rounded-md w-24 p-2 text-center">
+          border-2 border-indigo-500 rounded-md w-24 p-2 text-center">
             <a href="#Contact">Contact</a>
           </li>
         </ul>

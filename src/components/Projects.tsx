@@ -11,15 +11,15 @@ const Projects=()=> {
           </h1>
          
         </div>
-        <div className="flex flex-wrap lg:w-2/3 md:mx-auto sm:justify-center md:justify-center 
+        <div className="flex flex-wrap lg:w-2/3 md:mx-auto  md:justify-center 
       justify-center">
           {
             projects.map((project)=>(
               <div 
                  key={project.image}
-                 className="sm:w-1/2 p-4 ">
+                 className="sm:w-1/2 p-4 md:justify-center m:w-1/2">
                   <div className="bg-gray-900 flex  flex flex-col rounded-md shadow-md
-                   border-2 border-green-400 hover:bg-gray-800">
+                   border-2 border-indigo-900 hover:bg-gray-800">
                     <img src={project.image} alt="Image" className="h-40 p-2  rounded-md w-full" />
                
                     <div className="px-4 py-4   w-full bg-gray-900 text-justify

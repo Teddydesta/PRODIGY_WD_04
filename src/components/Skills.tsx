@@ -22,10 +22,10 @@ const Skills=()=> {
 
         </div>
         <div className='grid lg:grid-cols-4 col-start-2 gap-4 pb-10
-         md:grid-cols-2 gap-4 sm:grid-cols-2 gap-4 px-10 justify-center '>
+       px-10 justify-center md:w-full sm:w-full'>
           {skills.map((skill)=>(
-            <div className='  '>
-              <div className='bg-gray-800 rounded-md flex flex-row  py-14 justify-center  items-center hover:bg-gray-500 cursor-pointer'>
+            <div className=' border-2 border-indigo-900 rounded-lg '>
+              <div className='bg-gray-900 rounded-md flex flex-row  py-14 justify-center  items-center hover:bg-gray-500 cursor-pointer'>
               <CheckBadgeIcon className="inline-block w-10 fill-white  pr-4   rounded-full flex-shrink-0 " />
               <span className='title-font font-bold text-white'>
               {skill}
